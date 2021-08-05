@@ -1,4 +1,7 @@
 
+<p align="center">
+  <img  src="ghost.png">
+</p>
 
 # DeepGhostBusters
 Repository for the paper "DeepGhostBusters: Using Mask R-CNN to Detect and Mask Ghosting and Scattered-Light Artifacts from Optical Survey Images"
@@ -10,7 +13,7 @@ Dimitrios Tanoglidis, ...........
 
 
 ### Abstract 
-Wide-field astronomical surveys are often plagued by the presence of reflected (often known as ``ghosting artifacts'' or, simply, ``ghosts") and scattered-light artifacts. 
+Wide-field astronomical surveys are often plagued by the presence of reflected (often known as "ghosting artifacts" or, simply, "ghosts") and scattered-light artifacts. 
 The identification and mitigation of these artifacts is crucial for rigorous astronomical analyses. 
 However, the identification of ghosts and scattered-light artifacts is challenging given the complex morphology of these features and the large data volume of current and near-future surveys. 
 In this work we use images from the Dark Energy Survey to train, validate, and test a Mask R-CNN model to detect and localize ghosts and scattered-light artifacts. 
