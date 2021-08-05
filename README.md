@@ -6,6 +6,7 @@ Astronomy & Computing, submitted
 ArXiv: 
 
 **Authors:**\
+Dimitrios Tanoglidis ...........
 
 
 ### Abstract 
