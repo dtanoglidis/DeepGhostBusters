@@ -4,8 +4,8 @@
 </p>
 
 # DeepGhostBusters
-Repository for the paper "DeepGhostBusters: Using Mask R-CNN to Detect and Mask Ghosting and Scattered-Light Artifacts from Optical Survey Images"
-Astronomy & Computing, submitted
+Repository for the paper "DeepGhostBusters: Using Mask R-CNN to Detect and Mask Ghosting and Scattered-Light Artifacts from Optical Survey Images"\
+Astronomy & Computing, submitted\
 ArXiv: 
 
 **Authors:**\
@@ -22,3 +22,12 @@ We propose that a multi-step pipeline combining Mask R-CNN segmentation with a c
 
 
 ---
+
+### Table of contents
+
+- [Mask R-CNN](#Mask-R-CNN-implementation)
+
+
+---
+### Mask R-CNN implementation
+
