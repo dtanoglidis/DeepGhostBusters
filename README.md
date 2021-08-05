@@ -26,6 +26,9 @@ We propose that a multi-step pipeline combining Mask R-CNN segmentation with a c
 ### Table of contents
 
 - [Mask R-CNN](#Mask-R-CNN-implementation)
+- [Datasets](#Datasets)
+- [Notebook descriptions](#Notebook-descriptions)
+- [Requirements](#Requirements)
 
 
 ---
