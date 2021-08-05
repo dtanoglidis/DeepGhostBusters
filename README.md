@@ -31,3 +31,16 @@ We propose that a multi-step pipeline combining Mask R-CNN segmentation with a c
 ---
 ### Mask R-CNN implementation
 
+---
+### Datasets
+
+---
+### Notebook descriptions
+
+Here we give brief descriptions of the contents of notebook in this repository
+
+---
+### Requirements
+
+We ran all of our experiments in Google Colab Pro, using GPUs and High-RAM mode.
+
