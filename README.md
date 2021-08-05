@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img  src="ghost.png">
+  <img  src="images/ghost.png">
 </p>
 
 # DeepGhostBusters
