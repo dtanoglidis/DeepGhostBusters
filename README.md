@@ -1,9 +1,10 @@
 
+# DeepGhostBusters
+
 <p align="center">
   <img  src="images/ghost.png">
 </p>
 
-# DeepGhostBusters
 Repository for the paper "DeepGhostBusters: Using Mask R-CNN to Detect and Mask Ghosting and Scattered-Light Artifacts from Optical Survey Images"\
 Astronomy & Computing, submitted\
 ArXiv: 
