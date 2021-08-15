@@ -39,6 +39,10 @@ We propose that a multi-step pipeline combining Mask R-CNN segmentation with a c
   <img  src="images/Mask_R-CNN.png", width=450>
 </p>
 
+[Mask R-CNN](https://arxiv.org/abs/1703.06870) is a state-of-the art instance segmentation algorithm developed by Facebook's AI Research team ([FAIR](https://ai.facebook.com/)).
+
+In this work we use the Mask R-CNN implementation developed by [Matterport](https://github.com/matterport/Mask_RCNN) on Python 3, Keras, and TensorFlow.
+
 ---
 ### Datasets
 
