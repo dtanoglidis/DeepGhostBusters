@@ -28,6 +28,7 @@ We propose that a multi-step pipeline combining Mask R-CNN segmentation with a c
 
 - [Mask R-CNN](#Mask-R-CNN-implementation)
 - [Datasets](#Datasets)
+- [Training](#Training)
 - [Notebook descriptions](#Notebook-descriptions)
 - [Requirements](#Requirements)
 
@@ -51,7 +52,7 @@ In this work we use the Mask R-CNN implementation developed by [Matterport](http
   <img src="/images/Mask_ghost.png" width="395" /> 
 </p>
 
-Training the Mask R-CNN algorithm requires a number of images and and ground truth segmentation masks identifying objects of interest in each image.
+Training the Mask R-CNN algorithm requires a number of images and and ground truth **segmentation masks** identifying objects of interest in each image.
 
 We use 2000,  400x400 pixel, ghost- and scattered-light-containing focal plane images, coming from the full six years of operations of the Dark Energy Survey ([DES](https://www.darkenergysurvey.org/)). 
 These come from the training set used in [Chang et al., 2021](https://arxiv.org/abs/2105.10524) to train a standard CNN to distinguish clean from ghost-containing images, and are publicly available [here](https://des.ncsa.illinois.edu/releases/other/paper-data).
@@ -79,8 +80,10 @@ In the [Common_Core](/Datasets/Common_Core) folder, within the [Datasets](/Datas
   <img  src="/images/Overlap_Rays.png", width=350>
 </p>
 
-In cases where we wanted to compare with the results of the Ray-Tracing algorithm that is currently used by DES to identify ghost-containing CCDs in focal plane images, we used the files available [here](https://des-ops.fnal.gov:8082/exclude/) (`Ghost images` files, containing exposure numbers `expnum` and affected CCD numbers, `ccdnum`).
+In cases where we wanted to compare with the results of the **Ray-Tracing algorithm** that is currently used by DES to identify ghost-containing CCDs in focal plane images, we used the files available [here](https://des-ops.fnal.gov:8082/exclude/) (`Ghost images` files, containing exposure numbers `expnum` and affected CCD numbers, `ccdnum`).
 
+---
+### Training
 
 ---
 ### Notebook descriptions
