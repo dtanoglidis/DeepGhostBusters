@@ -73,7 +73,7 @@ All the annotation (masks and classes) `json` files can be found in the folder [
 - `annotations_val.json`, for the validation set.
 - `annotations_test.json`, for the test set.
 
-In the [Common_Core](/Dataset/Common_Core) folder within the [Dataset](\Dataset) folder
+In the [Common_Core](\Dataset/Common_Core) folder within the [Dataset](\Dataset) folder
 
 
 
