@@ -29,7 +29,7 @@ We propose that a multi-step pipeline combining Mask R-CNN segmentation with a c
 - [Mask R-CNN](#Mask-R-CNN-implementation)
 - [Datasets](#Datasets)
 - [Training](#Training)
-- [Inference](#Inference_&_Evaluation)
+- [Inference](#Inference-&-Evaluation)
 - [Notebook descriptions](#Notebook-descriptions)
 - [Requirements](#Requirements)
 
@@ -89,6 +89,10 @@ In cases where we wanted to compare with the results of the **Ray-Tracing algori
 <p align="left">
   <img  src="/images/Total_Loss.png", width=450>
 </p>
+
+The training of the *DeepGhostBusters* Mask R-CNN model is performed in the [Training_Ghosts.ipynb](/Training_Ghosts.ipynb) notebook.
+
+We define 
 
 ---
 ### Inference & Evaluation
