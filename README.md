@@ -29,6 +29,7 @@ We propose that a multi-step pipeline combining Mask R-CNN segmentation with a c
 - [Mask R-CNN](#Mask-R-CNN-implementation)
 - [Datasets](#Datasets)
 - [Training](#Training)
+- [Inference](#Inference & Evaluation)
 - [Notebook descriptions](#Notebook-descriptions)
 - [Requirements](#Requirements)
 
@@ -84,6 +85,13 @@ In cases where we wanted to compare with the results of the **Ray-Tracing algori
 
 ---
 ### Training
+
+<p align="left">
+  <img  src="/images/Total_Loss.png", width=450>
+</p>
+
+---
+### Inference & Evaluation
 
 ---
 ### Notebook descriptions
