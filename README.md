@@ -61,7 +61,7 @@ An example of an artifact-containing image (left) with the corresponding masks (
 
 Before training, we randomly split the full dataset (images and corresponding masks) into a training set (1400 images), a validation set (300 images), and a test set (300 images), as shown in the notebook [Dataset_Split.ipynb](/Datasets/Dataset_Split.ipynb).
 
-Inside the [Dataset](\Dataset) folder you can find as `zip` files the three sets:
+Inside the [Dataset](\Datasets) folder you can find as `zip` files the three sets:
 
 - `Training_set_1.zip`, `Training_set_1.zip`,  `Training_set_3.zip`. These files, combined, constitute the training set (images only). Ww split the training set into thtree files here, because the full dataset was too large to be uploaded as a single file.
 - `Validation_set.zip`, for the images in the validation set.
@@ -73,7 +73,7 @@ All the annotation (masks and classes) `json` files can be found in the folder [
 - `annotations_val.json`, for the validation set.
 - `annotations_test.json`, for the test set.
 
-In the [Common_Core](\Dataset/Common_Core) folder within the [Dataset](\Dataset) folder
+In the [Common_Core](\Datasets/Common_Core) folder within the [Dataset](\Datasets) folder
 
 
 
