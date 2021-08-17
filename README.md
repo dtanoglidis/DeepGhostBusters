@@ -46,7 +46,7 @@ In this work we use the Mask R-CNN implementation developed by [Matterport](http
 
 Mask R-CNN simultaneously performs object detection and semantic segementation; the figure above presents a high-level description of its architecture: A pre-trained backbone CNN network is used to generate feature maps, that pass through a Region Proposal Network (RPN) that finds (bounding box coordinates) a number of Regions of Interest (RoIs) that are likely to contain an object. Subsequently the feature maps of these RoIs are being sent to the main part of Mask R-CNN that simultaneously performs: 
 - Regression of box coordinates, to find the optimal bounding box around each object.
-- Classification, to find the category of each object
+- Classification, to find the category of each object.
 - Per-pixel-classification, using Fully Convolutional CNNs ([FCN](https://arxiv.org/abs/1411.4038)) to create the segmentation masks.
 
 For a more detailed, pedagogical, description of the Mask R-CNN model and its precursors, see [Weng 2017](https://lilianweng.github.io/lil-log/2017/12/31/object-recognition-for-dummies-part-3.html).
@@ -115,7 +115,7 @@ In [Inference_and_Evaluation.ipynb](/Inference_and_Evaluation.ipynb) we evaluate
 
 It is broadly divided in four parts:
 
-- In the first part we present some examples of predicted ghosting and scattered-light artifact masks, like the one below:
+- In the first part we present some examples of predicted ghosting and scattered-light artifact masks, like the one below (different colors corresponding to different artifact classes):
 
 <p align="left">
   <img  src="/images/Predicted.png", width=300>
@@ -123,6 +123,13 @@ It is broadly divided in four parts:
 
 - In the second part we define CCD-based metrics (precision, recall, F1 score) and we compare the results from the Mask R-CNN and Ray-Tracing algorithms.
 
+- In the third part we estimate some evaluation metrics, such as the Average Precision (AP), that are common in the object detection literature. These can be used to compare the performance of the algorithm in detecting and masking effectively of different artifact types. 
+
+- In the final part we test the ability of the Mask R-CNN to distinguish between images that contain ghosts or scattered-light artifacts and images that are "clean". For this reason we used the original test set from [Chang et al., 2021](https://arxiv.org/abs/2105.10524), available [here](https://des.ncsa.illinois.edu/releases/other/paper-data), that contains an even number of ghost-containing and clean images (1792 in total). We assigned a label "has ghost" to each image that the Mask R-CNN model found at least one artifact. The resulting confusion matrix can be seen below.
+
+<p align="left">
+  <img  src="/images/Confusion.png", width=310>
+</p
 
 
 ---
