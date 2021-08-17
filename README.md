@@ -121,17 +121,24 @@ It is broadly divided in four parts:
   <img  src="/images/Predicted.png", width=300>
 </p>
 
-- In the second part we define CCD-based metrics (precision, recall, F1 score) and we compare the results from the Mask R-CNN and Ray-Tracing algorithms.
+- In the second part we define CCD-based metrics (precision, recall, F1 score) and we compare the results from the Mask R-CNN and Ray-Tracing algorithms, in plots like the one shown below:
 
-- In the third part we estimate some evaluation metrics, such as the Average Precision (AP), that are common in the object detection literature. These can be used to compare the performance of the algorithm in detecting and masking effectively of different artifact types. 
+<p align="left">
+  <img  src="/images/Prec_Recall.png", width=600>
+</p>
 
-- In the final part we test the ability of the Mask R-CNN to distinguish between images that contain ghosts or scattered-light artifacts and images that are "clean". For this reason we used the original test set from [Chang et al., 2021](https://arxiv.org/abs/2105.10524), available [here](https://des.ncsa.illinois.edu/releases/other/paper-data), that contains an even number of ghost-containing and clean images (1792 in total). We assigned a label "has ghost" to each image that the Mask R-CNN model found at least one artifact. The resulting confusion matrix can be seen below.
+- In the third part we estimate some evaluation metrics, such as the Average Precision (AP) at different overlap (between predicted and ground truth masks) levels, that are common in the object detection literature. These can be used to compare the performance of the algorithm in detecting and masking effectively of different artifact types. Precision-Recall curves at different overlap levels and for the different artifact types are shown below:
+
+<p align="left">
+  <img  src="/images/Precision_Recall.png", width=600>
+</p>
+
+- In the final part we test the ability of the Mask R-CNN to distinguish between images that contain ghosts or scattered-light artifacts and images that are "clean". For this reason we used the original test set from [Chang et al., 2021](https://arxiv.org/abs/2105.10524), available [here](https://des.ncsa.illinois.edu/releases/other/paper-data), that contains an even number of ghost-containing and clean images (1792 in total). We assigned a label "has ghost" to each image that the Mask R-CNN model found at least one artifact. The resulting confusion matrix can be seen below:
 
 <p align="left">
   <img  src="/images/Confusion.png", width=310>
 </p
 
-lala
   
 ---
   
