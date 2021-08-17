@@ -144,12 +144,16 @@ It is broadly divided in four parts:
   
 ### Notebook descriptions
 
-The content of most of the notebooks in this repository has already been described above, but let us give a brief summary for ease of reference:
+The content of most of the notebooks in this repository has already been described above, but let us give a brief summary for ease of reference (also describing a couple of other Python scripts in this repository):
 
 - [Training_Ghosts.ipynb](/Training_Ghosts.ipynb). The training process is performed; classes are provided to read the data files; plots of the training history are created.
 - [Inference_and_Evaluation.ipynb](/Inference_and_Evaluation.ipynb). In this long notebook there are some object detection examples on unseen test images, estimation of evaluation metrics and a comparison with the results from the Ray-Tracing algorithm.
 - [Annotators_Comparison.ipynb](/Annotators_Comparison.ipynb). In this notebook we study the cohesion of the annotation process by comparing the masks created by the eight different annotators on a common dataset of 50 images.
-
+- [Mask_Reading.ipynb](/Mask_Reading.ipynb) shows how to read the annotation files and overplot the ground truth masks on the ghost-containing images. It also show how to map ghost-containing CCDs.
+- [Data_gen.ipynb](/Data_gen.ipynb), converts the numpy files provided by [Chang et al., 2021](https://arxiv.org/abs/2105.10524) to `jpg` images; also shows a bit how to use the [run.py](/run.py) file (see below).
+- [Dataset_Split.ipynb](/Datasets/Dataset_Split.ipynb) shows how we split the full dataset into training-validation-test sets.
+- [/Ghost_load.py](/Ghost_load.py) is a small script containing the `class GhostsDataset` described in the [Training](#Training) section, in case someone wants to use to load datasets in a different notebook (it is used in the Inference and evaluation notebook to load the test set).
+- [run.py](/run.py) is a small script used to find the pixel coordinates of the CCD edges (useful when wanted to map ground truth or predicted artifact masks to the corresponding CCDs).
 
 ---
 ### Requirements
