@@ -44,6 +44,13 @@ We propose that a multi-step pipeline combining Mask R-CNN segmentation with a c
 
 In this work we use the Mask R-CNN implementation developed by [Matterport](https://github.com/matterport/Mask_RCNN) on Python 3, Keras, and TensorFlow.
 
+Mask R-CNN simultaneously performs object detection and semantic segementation; the figure above presents a high-level description of its architecture: A pre-trained backbone CNN network is used to generate feature maps, that pass through a Region Proposal Network (RPN) that finds (bounding box coordinates) a number of Regions of Interest (RoIs) that are likely to contain an object. Subsequently the feature maps of these RoIs are being sent to the main part of Mask R-CNN that simultaneously performs: 
+- Regression of box coordinates, to find the optimal bounding box around each object.
+- Classification, to find the category of each object
+- Per-pixel-classification, using Fully Convolutional CNNs [FCNN](https://arxiv.org/abs/1411.4038) to create the segmentation masks.
+
+For a more detailed, pedagogical, description of the Mask R-CNN model and its precursors, see [Weng 2017](https://lilianweng.github.io/lil-log/2017/12/31/object-recognition-for-dummies-part-3.html).
+
 ---
 ### Datasets
 
@@ -94,6 +101,8 @@ The training of the *DeepGhostBusters* Mask R-CNN model is performed in the [Tra
 We define the `class GhostsDataset` that loads the datasets (training, validation) -- images and annotations -- in a form that the above Mask R-CNN implementation is able to process. This, in turn, was adapted from the `class BalloonDataset` [here](https://github.com/matterport/Mask_RCNN/blob/master/samples/balloon/balloon.py), an example provided by the developers of the Mask R-CNN code we use. 
 
 The configuration class `class GhostsConfig(Config)` has also been edited to accept `Type` as the name of the different artifact classes in our annotation files, and we have also defined initial learning rate, batch size etc.
+
+The backbone network we used is the [Resnet-101](https://arxiv.org/abs/1512.03385) pretrained (weight initialization) on the [COCO dataset](https://cocodataset.org/#home).
 
 We trained the Mask R-CNN model for 75 epochs with progressively decreasing learning rate, as described in the paper. The total loss as a function of training epoch is shown in the figure above. Training took ~4 hours on Colab Pro's fast GPUs.
 
