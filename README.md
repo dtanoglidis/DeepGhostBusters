@@ -92,7 +92,13 @@ In cases where we wanted to compare with the results of the **Ray-Tracing algori
 
 The training of the *DeepGhostBusters* Mask R-CNN model is performed in the [Training_Ghosts.ipynb](/Training_Ghosts.ipynb) notebook.
 
-We define 
+We define the `class GhostsDataset` that loads the datasets (training, validation) -- images and annotations -- in a form that the above Mask R-CNN implementation is able to process. This, in turn, was adapted from the `class BalloonDataset` [here](https://github.com/matterport/Mask_RCNN/blob/master/samples/balloon/balloon.py), an example provided by the developers of the Mask R-CNN code we use. 
+
+The configuration class `class GhostsConfig(Config)` has also been edited to accept `Type` as the name of the different artifact classes in our annotation files, and we have also defined initial learning rate, batch size etc.
+
+We trained the Mask R-CNN model for 75 epochs with progressively decreasing learning rate, as described in the paper. The total loss as a function of training epoch is shown in the figure above. Training took ~4 hours on Colab Pro's fast GPUs.
+
+In the notebook we show how to store the training history, make plots of the different components of the loss etc.
 
 ---
 ### Inference & Evaluation
