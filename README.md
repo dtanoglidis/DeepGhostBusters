@@ -106,7 +106,12 @@ In the notebook we show how to store the training history, make plots of the dif
 ---
 ### Notebook descriptions
 
-Here we give brief descriptions of the contents of notebook in this repository
+The content of most of the notebooks in this repository has already been described above, but let us give a brief summary for ease of reference:
+
+- [Training_Ghosts.ipynb](/Training_Ghosts.ipynb). The training process is performed; classes are provided to read the data files; plots of the training history are created.
+- [Inference_and_Evaluation.ipynb](/Inference_and_Evaluation.ipynb). In this long notebook there are some object detection examples on unseen test images, estimation of evaluation metrics and a comparison with the results from the Ray-Tracing algorithm.
+- [Annotators_Comparison.ipynb](/Annotators_Comparison.ipynb). In this notebook we study the cohesion of the annotation process by comparing the masks created by the eight different annotators on a common dataset of 50 images.
+
 
 ---
 ### Requirements
