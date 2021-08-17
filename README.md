@@ -131,8 +131,10 @@ It is broadly divided in four parts:
   <img  src="/images/Confusion.png", width=310>
 </p
 
-
+lala
+  
 ---
+  
 ### Notebook descriptions
 
 The content of most of the notebooks in this repository has already been described above, but let us give a brief summary for ease of reference:
