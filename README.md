@@ -111,7 +111,19 @@ In the notebook we show how to store the training history, make plots of the dif
 ---
 ### Inference & Evaluation
 
-In [Inference_and_Evaluation.ipynb](/Inference_and_Evaluation.ipynb) we evaluate the performance of the Mask R-CNN model on the test set (described in the [Datasets](#Datasets)
+In [Inference_and_Evaluation.ipynb](/Inference_and_Evaluation.ipynb) we evaluate the performance of the Mask R-CNN model on the test set (described in the [Datasets](#Datasets)); it is the notebook used to generate all the results presented in the main `Results` section of our paper (and of the related appendices).
+
+It is broadly divided in four parts:
+
+- In the first part we present some examples of predicted ghosting and scattered-light artifact masks, like the one below:
+
+<p align="left">
+  <img  src="/images/Predicted.png", width=300>
+</p>
+
+- In the second part we define CCD-based metrics (precision, recall, F1 score) and we compare the results from the Mask R-CNN and Ray-Tracing algorithms.
+
+
 
 ---
 ### Notebook descriptions
