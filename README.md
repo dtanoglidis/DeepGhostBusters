@@ -152,7 +152,7 @@ The content of most of the notebooks in this repository has already been describ
 - [Mask_Reading.ipynb](/Mask_Reading.ipynb) shows how to read the annotation files and overplot the ground truth masks on the ghost-containing images. It also show how to map ghost-containing CCDs.
 - [Data_gen.ipynb](/Data_gen.ipynb), converts the numpy files provided by [Chang et al., 2021](https://arxiv.org/abs/2105.10524) to `jpg` images; also shows a bit how to use the [run.py](/run.py) file (see below).
 - [Dataset_Split.ipynb](/Datasets/Dataset_Split.ipynb) shows how we split the full dataset into training-validation-test sets.
-- [/Ghost_load.py](/Ghost_load.py) is a small script containing the `class GhostsDataset` described in the [Training](#Training) section, in case someone wants to use to load datasets in a different notebook (it is used in the Inference and evaluation notebook to load the test set).
+- [Ghost_load.py](/Ghost_load.py) is a small script containing the `class GhostsDataset` described in the [Training](#Training) section, in case someone wants to use to load datasets in a different notebook (it is used in the Inference and evaluation notebook to load the test set).
 - [run.py](/run.py) is a small script used to find the pixel coordinates of the CCD edges (useful when wanted to map ground truth or predicted artifact masks to the corresponding CCDs).
 
 ---
