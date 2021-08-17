@@ -1,4 +1,3 @@
-
 # DeepGhostBusters
 
 <p align="center">
