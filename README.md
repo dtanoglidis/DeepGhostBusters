@@ -47,7 +47,7 @@ In this work we use the Mask R-CNN implementation developed by [Matterport](http
 Mask R-CNN simultaneously performs object detection and semantic segementation; the figure above presents a high-level description of its architecture: A pre-trained backbone CNN network is used to generate feature maps, that pass through a Region Proposal Network (RPN) that finds (bounding box coordinates) a number of Regions of Interest (RoIs) that are likely to contain an object. Subsequently the feature maps of these RoIs are being sent to the main part of Mask R-CNN that simultaneously performs: 
 - Regression of box coordinates, to find the optimal bounding box around each object.
 - Classification, to find the category of each object
-- Per-pixel-classification, using Fully Convolutional CNNs [FCN](https://arxiv.org/abs/1411.4038) to create the segmentation masks.
+- Per-pixel-classification, using Fully Convolutional CNNs ([FCN](https://arxiv.org/abs/1411.4038)) to create the segmentation masks.
 
 For a more detailed, pedagogical, description of the Mask R-CNN model and its precursors, see [Weng 2017](https://lilianweng.github.io/lil-log/2017/12/31/object-recognition-for-dummies-part-3.html).
 
@@ -110,6 +110,8 @@ In the notebook we show how to store the training history, make plots of the dif
 
 ---
 ### Inference & Evaluation
+
+In [Inference_and_Evaluation.ipynb](/Inference_and_Evaluation.ipynb) we evaluate the performance of the Mask R-CNN model on the test set (described in the [Datasets](#Datasets)
 
 ---
 ### Notebook descriptions
