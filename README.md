@@ -9,7 +9,7 @@ Astronomy & Computing, submitted\
 ArXiv: 
 
 **Authors:**\
-Dimitrios Tanoglidis, ...........
+Dimitrios Tanoglidis, Aleksandra Ćiprijanović, Alex Drlica-Wagner, Brian Nord, Michael H.L.S. Wang, Ariel Jacob Amsellem, Kathryn Downey, Sydney Jenkins, Diana Kafkes, Zhuoqi Zhang
 
 
 ### Abstract 
