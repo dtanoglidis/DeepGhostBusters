@@ -13,7 +13,7 @@ Dimitrios Tanoglidis, Aleksandra Ćiprijanović, Alex Drlica-Wagner, Brian Nord,
 
 
 ### Abstract 
-Wide-field astronomical surveys are often affected by the presence of undesirable reflections (often known as ``ghosting artifacts'' or ``ghosts") and scattered-light artifacts. 
+Wide-field astronomical surveys are often affected by the presence of undesirable reflections (often known as ''ghosting artifacts'' or ''ghosts") and scattered-light artifacts. 
 The identification and mitigation of these artifacts is important for rigorous astronomical analyses of faint and  low-surface-brightness systems. 
 However, the identification of ghosts and scattered-light artifacts is challenging due to a) the complex morphology of these features and b) the large data volume of current and near-future surveys. 
 In this work, we use images from the Dark Energy Survey (DES) to train, validate, and test a deep neural network (Mask R-CNN) to detect and localize ghosts and scattered-light artifacts. 
