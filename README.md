@@ -1,3 +1,8 @@
+[![arXiv](https://img.shields.io/badge/arXiv-2109.08246-b31b1b.svg)](https://arxiv.org/abs/2109.08246)
+
+
+
+
 # DeepGhostBusters
 
 <p align="center">
@@ -6,7 +11,7 @@
 
 Repository for the paper "DeepGhostBusters: Using Mask R-CNN to Detect and Mask Ghosting and Scattered-Light Artifacts from Optical Survey Images"\
 Astronomy & Computing, submitted\
-ArXiv: 
+ArXiv: arXiv:2109.08246
 
 **Authors:**\
 Dimitrios Tanoglidis, Aleksandra Ćiprijanović, Alex Drlica-Wagner, Brian Nord, Michael H.L.S. Wang, Ariel Jacob Amsellem, Kathryn Downey, Sydney Jenkins, Diana Kafkes, Zhuoqi Zhang
