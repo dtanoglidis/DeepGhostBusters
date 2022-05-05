@@ -10,7 +10,7 @@
 </p>
 
 Repository for the paper "DeepGhostBusters: Using Mask R-CNN to Detect and Mask Ghosting and Scattered-Light Artifacts from Optical Survey Images"\
-Astronomy & Computing, submitted\
+Astronomy & Computing, accepted\
 ArXiv: arXiv:2109.08246
 
 **Authors:**\
